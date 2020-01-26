@@ -12,8 +12,8 @@ public class Main {
         {
             int p = input.nextInt();
             int q = input.nextInt();
-            if(!uf.connected(p,q)) {
-                uf.union(p,q);
+            if(!uf.quConnected(p,q)) {
+                uf.quUnion(p,q);
                 System.out.println(p + " " + q + " is connected now.");
             }else{
                 System.out.println(p + " " + q + " is connected");
