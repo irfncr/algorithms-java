@@ -19,6 +19,5 @@ public class Main {
                 System.out.println(p + " " + q + " is connected");
             }
         }
-        System.out.println("Hello World!");
     }
 }
