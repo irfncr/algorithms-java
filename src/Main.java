@@ -6,6 +6,7 @@ public class Main {
 
         int N = 0;
         Scanner input = new Scanner(System.in);
+        /*
         N = input.nextInt();
         UF uf = new UF(N);
         while (input.hasNextInt())
@@ -18,6 +19,18 @@ public class Main {
             }else{
                 System.out.println(p + " " + q + " is connected");
             }
+        }*/
+        StackOfStrings myStack = new StackOfStrings();
+        while(input.hasNext()){
+            String s = input.next();
+            if(s.equals("-")){
+                System.out.println(myStack.pop());
+            }
+            else{
+                myStack.push(s);
+            }
         }
+
+
     }
 }
