@@ -21,7 +21,7 @@ public class Main {
             }
         }*/
         QueueOfStrings myQueue = new QueueOfStrings();
-        StackOfStrings myStack = new StackOfStrings();
+        StackOfStrings<String> myStack = new StackOfStrings<String>();
         while(input.hasNext()){
             String s = input.next();
             if(s.equals("-")){
