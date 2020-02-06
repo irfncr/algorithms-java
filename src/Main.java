@@ -20,14 +20,15 @@ public class Main {
                 System.out.println(p + " " + q + " is connected");
             }
         }*/
+        QueueOfStrings myQueue = new QueueOfStrings();
         StackOfStrings myStack = new StackOfStrings();
         while(input.hasNext()){
             String s = input.next();
             if(s.equals("-")){
-                System.out.println(myStack.pop());
+                System.out.println(myQueue.dequeue());
             }
             else{
-                myStack.push(s);
+                myQueue.enqueue(s);
             }
         }
 
