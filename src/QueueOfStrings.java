@@ -22,6 +22,7 @@ public class QueueOfStrings {
     }
 
     public String dequeue(){
+        // check whether queue is empty or not
         String item = first.item;
         first = first.next;
         if (isEmpty())
