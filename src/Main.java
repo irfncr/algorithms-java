@@ -2,9 +2,11 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public static void main(String[] args) {
 
         int N = 0;
+
         Scanner input = new Scanner(System.in);
         /*
         N = input.nextInt();
@@ -21,7 +23,7 @@ public class Main {
             }
         }*/
         QueueOfStrings myQueue = new QueueOfStrings();
-        StackOfStrings<String> myStack = new StackOfStrings<String>();
+        Stack<String> myStack = new Stack<String>();
         while(input.hasNext()){
             String s = input.next();
             if(s.equals("-")){
