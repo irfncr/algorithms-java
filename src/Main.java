@@ -7,6 +7,17 @@ public class Main {
 
         int N = 0;
 
+        while(N<60){
+            java.awt.Toolkit.getDefaultToolkit().beep();
+            try {
+                Thread.sleep(45000); // introduce delay
+            } catch (InterruptedException e) { }
+            java.awt.Toolkit.getDefaultToolkit().beep();
+            try {
+                Thread.sleep(15000); // introduce delay
+            } catch (InterruptedException e) { }
+            N++;
+        }
         Scanner input = new Scanner(System.in);
         /*
         N = input.nextInt();
