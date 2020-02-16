@@ -9,12 +9,13 @@ public class Main {
 
         while(N<60){
             java.awt.Toolkit.getDefaultToolkit().beep();
+            System.out.println(N);
             try {
-                Thread.sleep(45000); // introduce delay
+                Thread.sleep(50000); // introduce delay
             } catch (InterruptedException e) { }
             java.awt.Toolkit.getDefaultToolkit().beep();
             try {
-                Thread.sleep(15000); // introduce delay
+                Thread.sleep(10000); // introduce delay
             } catch (InterruptedException e) { }
             N++;
         }
