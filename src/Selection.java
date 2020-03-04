@@ -45,7 +45,7 @@ public class Selection {
         return c.compare(v,w) < 0;
     }
 
-    public static boolean isSorded (Comparable []a){
+    public static boolean isSorted (Comparable []a){
         for(int i = 1; i < a.length; i++){
             if(less(a[i], a[i-1]))
                 return false;

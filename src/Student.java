@@ -1,8 +1,8 @@
 import java.util.Comparator;
 
 public class Student {
-    private static final Comparator<Student> BY_NAME = new ByName();
-    private static final Comparator<Student> BY_SECTION = new BySection();
+    public static final Comparator<Student> BY_NAME = new ByName();
+    public static final Comparator<Student> BY_SECTION = new BySection();
 
     private String name;
     private int section;
