@@ -1,9 +1,12 @@
+import java.util.PriorityQueue;
+
 public class MaxPQ<Key extends Comparable<Key>> {
+
 
     private int N;
     private Key[] pq;
 
-    
+
     public MaxPQ(int capacity){
         pq = (Key[]) new Comparable[capacity+1];
     }
@@ -41,7 +44,11 @@ public class MaxPQ<Key extends Comparable<Key>> {
     }
 
     public Key delMax(){
-        return null;
+        Key max = pq[1];
+        exch(1, N--);
+        sink(1);
+        pq[N+1] = null;
+        return max;
     }
 
     public boolean isEmpty(){
